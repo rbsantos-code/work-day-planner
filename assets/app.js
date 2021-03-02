@@ -19,8 +19,7 @@ $(document).ready(function() {
                 $(".time-block").removeClass("past");
                 $(".time-block").addClass("present");
                 $(".time-block").removeClass('future');
-            }
-            else {
+            } else {
                 $(".time-block").removeClass("past");
                 $(".time-block").removeClass("present");
                 $(".time-block").addClass("future");

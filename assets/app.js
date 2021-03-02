@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var currentDate = moment().format("MMM do YYYY");
-    $(#currentDay).html(currentDate);
+    $("#currentDay").html(currentDate);
 
     // Function section
     function clockHour() {
@@ -36,5 +36,17 @@ $(document).ready(function() {
         localStorage.setItem(time, text);
     })
 
-    
+    // Local Storage section
+    $("#firstHour .description").val(localStorage.getItem("firstHour"));
+    $("#secondHour .description").val(localStorage.getItem("secondHour"));
+    $("#thirdHour .description").val(localStorage.getItem("thirdHour"));
+    $("#fourthHour .description").val(localStorage.getItem("fourthHour"));
+    $("#fifthHour .description").val(localStorage.getItem("fifthHour"));
+    $("#sixthHour .description").val(localStorage.getItem("sixthHour"));
+    $("#seventhHour .description").val(localStorage.getItem("seventhHour"));
+    $("#eighthHour .description").val(localStorage.getItem("eighthHour"));
+    $("#ninthHour .description").val(localStorage.getItem("ninthHour"));
+
+    // call function
+    clockHour();
 })

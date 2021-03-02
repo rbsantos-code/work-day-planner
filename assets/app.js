@@ -10,12 +10,12 @@ $(document).ready(function() {
             var hourBlock = parseInt($(this).attr("id").split("hour")[1]);
 
             // Color event for time past/present/future
-            if (currentTime < hourBlock) {
+            if (hourBlock < currentTime) {
                 $(this).addClass("past");
                 $(this).removeClass("present");
                 $(this).removeClass("future");
             }
-            else if (currentTime === hourBlock) {
+            else if (hourBlock === currentTime) {
                 $(this).removeClass("past");
                 $(this).addClass("present");
                 $(this).removeClass('future');

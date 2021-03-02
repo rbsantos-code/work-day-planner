@@ -7,23 +7,23 @@ $(document).ready(function() {
         var currentTime = moment().hour();
 
         $(".time-block").each(function() {
-            var hourBlock = parseInt($(this).attr("id").split("hour")[1]);
+            var hourBlock = parseInt($(".time-block").attr("id").split("hour")[1]);
 
             // Color event for time past/present/future
             if (hourBlock < currentTime) {
-                $(this).addClass("past");
-                $(this).removeClass("present");
-                $(this).removeClass("future");
+                $(".time-block").addClass("past");
+                $(".time-block").removeClass("present");
+                $(".time-block").removeClass("future");
             }
             else if (hourBlock === currentTime) {
-                $(this).removeClass("past");
-                $(this).addClass("present");
-                $(this).removeClass('future');
+                $(".time-block").removeClass("past");
+                $(".time-block").addClass("present");
+                $(".time-block").removeClass('future');
             }
             else {
-                $(this).removeClass("past");
-                $(this).removeClass("present");
-                $(this).addClass("future");
+                $(".time-block").removeClass("past");
+                $(".time-block").removeClass("present");
+                $(".time-block").addClass("future");
             }
         })
     }

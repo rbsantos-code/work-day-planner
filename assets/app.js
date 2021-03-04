@@ -7,7 +7,7 @@ $(document).ready(function() {
         var currentTime = moment().hour();
 
         $(".time-block").each(function() {
-            var hourBlock = parseInt($(".time-block").attr("id").split("hour")[1]);
+            var hourBlock = parseInt($(".time-block").attr("id").split("Hour")[1]);
 
             // Color event for time past/present/future
             if (hourBlock < currentTime) {

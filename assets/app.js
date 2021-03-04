@@ -9,6 +9,7 @@ $(document).ready(function() {
         $(".time-block").each(function() {
             var hourBlock = parseInt($(this).attr("id").split("-")[1]);
             console.log(hourBlock)
+            // console.log to see if I am getting an integer and not "Nan"
 
             // Color event for time past/present/future
             // Got assistance with tutor for this section
@@ -39,15 +40,15 @@ $(document).ready(function() {
     })
 
     // Local Storage section
-    $("#firstHour .description").val(localStorage.getItem("firstHour"));
-    $("#secondHour .description").val(localStorage.getItem("secondHour"));
-    $("#thirdHour .description").val(localStorage.getItem("thirdHour"));
-    $("#fourthHour .description").val(localStorage.getItem("fourthHour"));
-    $("#fifthHour .description").val(localStorage.getItem("fifthHour"));
-    $("#sixthHour .description").val(localStorage.getItem("sixthHour"));
-    $("#seventhHour .description").val(localStorage.getItem("seventhHour"));
-    $("#eighthHour .description").val(localStorage.getItem("eighthHour"));
-    $("#ninthHour .description").val(localStorage.getItem("ninthHour"));
+    $("#hour-8 .description").val(localStorage.getItem("hour-8"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+    $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+    $("#hour-14 .description").val(localStorage.getItem("hour-14"));
+    $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
 
     // call function
     clockHour();

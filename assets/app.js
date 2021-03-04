@@ -7,22 +7,24 @@ $(document).ready(function() {
         var currentTime = moment().hour();
 
         $(".time-block").each(function() {
-            var hourBlock = parseInt($(".time-block").attr("id").split("Hour")[1]);
+            var hourBlock = parseInt($(this).attr("id").split("-")[1]);
+            console.log(hourBlock)
 
             // Color event for time past/present/future
+            // Got assistance with tutor for this section
             if (hourBlock < currentTime) {
-                $(".time-block").addClass("past");
-                $(".time-block").removeClass("present");
-                $(".time-block").removeClass("future");
+                $(this).addClass("past");
+                $(this).removeClass("present");
+                $(this).removeClass("future");
             }
             else if (hourBlock === currentTime) {
-                $(".time-block").removeClass("past");
-                $(".time-block").addClass("present");
-                $(".time-block").removeClass('future');
+                $(this).removeClass("past");
+                $(this).addClass("present");
+                $(this).removeClass("future");
             } else {
-                $(".time-block").removeClass("past");
-                $(".time-block").removeClass("present");
-                $(".time-block").addClass("future");
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
             }
         })
     }

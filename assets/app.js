@@ -29,8 +29,9 @@ $(document).ready(function() {
 
     // Buttons function section
     $(".saveBtn").on("click", function () {
-        var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
+        var text = $(this).siblings(".description").val();
+       
 
         localStorage.setItem(time, text);
     })

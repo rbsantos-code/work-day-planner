@@ -29,6 +29,7 @@ body {
   .next {
     float: right;
   }
+  /* end button style */
   
   .description{
     white-space: pre-wrap;

@@ -21,6 +21,14 @@ body {
     border-bottom: 10px solid black;
     
   }
+
+  .previous {
+    float: left;
+  }
+
+  .next {
+    float: right;
+  }
   
   .description{
     white-space: pre-wrap;

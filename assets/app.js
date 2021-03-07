@@ -34,10 +34,10 @@ $(document).ready(function() {
     $(".saveBtn").on("click", function () {
         var time = $(this).parent().attr("id");
         var text = $(this).siblings(".description").val();
-       
 
         localStorage.setItem(time, text);
     })
+
 
     // Local Storage section
     $("#hour-8 .description").val(localStorage.getItem("hour-8"));

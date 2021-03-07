@@ -18,7 +18,8 @@
 * When the user uses the save button, their text will be saved in localStorage.
 
 ## End Product Image
-![_Users_richardbriansantos_Desktop_work-day_index html(iPad Pro)](https://user-images.githubusercontent.com/77135925/110043544-6a2f0000-7cfc-11eb-8fad-08884fa0c214.png)
+![_Users_richardbriansantos_Desktop_work-day_index html(iPad Pro)](https://user-images.githubusercontent.com/77135925/110227511-f7658680-7ead-11eb-8e05-931928f89b86.png)
+
 
 
 ## Built with 

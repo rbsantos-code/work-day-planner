@@ -28,4 +28,4 @@
 * JavaScript
 
 ## Website link 
-* https://rbsantos-code.github.io/work-day-planner/
+https://rbsantos-code.github.io/work-day-planner/
